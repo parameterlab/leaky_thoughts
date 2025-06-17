@@ -1,0 +1,7 @@
+{
+  "provider": {
+    "allow_fallbacks": true,
+    "require_parameters": true,
+    "data_collection": "deny"
+  }
+}
