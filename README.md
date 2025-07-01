@@ -4,9 +4,22 @@
   <img src="teaser_figure_new3-1.png" alt="Teaser Image" width="500"/>
 </p>
 
-This is the repository for the paper "Leaky Thoughts: Large Reasoning Models Are Not Private Thinkers".
+This is the repository for the paper [Leaky Thoughts: Large Reasoning Models Are Not Private Thinkers](https://arxiv.org/abs/2506.15674).
 
 This project investigates privacy leakage within the reasoning traces of Large Reasoning Models (LRMs) when they function as personal agents. It challenges the notion that these internal "thoughts" are safe, demonstrating that sensitive user data within it can be easily exposed. We reveal a fundamental conflict: while deeper reasoning and test-time compute enhance utility, they also significantly increase the privacy attack surface within the model's thinking process. These dynamics are explored through two main experimental setups: direct probing of models and evaluations in an agentic, interactive environment. 
+
+If you use our code and resources, please cite our paper:
+```bibtex
+@misc{green2025leakythoughtslargereasoning,
+      title={Leaky Thoughts: Large Reasoning Models Are Not Private Thinkers}, 
+      author={Tommaso Green and Martin Gubri and Haritz Puerto and Sangdoo Yun and Seong Joon Oh},
+      year={2025},
+      eprint={2506.15674},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2506.15674}, 
+}
+```
 
 ## AirGapAgent-R Dataset
 For the probing experiments, we use the AirGapAgent-R dataset, which is a reconstructed version of the original (unreleased) benchmark used in the AirGapAgent paper ([Bagdasarian et al.](https://dl.acm.org/doi/10.1145/3658644.3690350)). We release this dataset on 🤗 Hugging Face at the following link: [parameterlab/leaky_thoughts](https://huggingface.co/datasets/parameterlab/leaky_thoughts). Download instructions are detailed in Step 4 of the Setup section.
