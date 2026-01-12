@@ -10,14 +10,27 @@ This project investigates privacy leakage within the reasoning traces of Large R
 
 If you use our code and resources, please cite our paper:
 ```bibtex
-@misc{green2025leakythoughtslargereasoning,
-      title={Leaky Thoughts: Large Reasoning Models Are Not Private Thinkers}, 
-      author={Tommaso Green and Martin Gubri and Haritz Puerto and Sangdoo Yun and Seong Joon Oh},
-      year={2025},
-      eprint={2506.15674},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2506.15674}, 
+@inproceedings{green-etal-2025-leaky,
+    title = "Leaky Thoughts: Large Reasoning Models Are Not Private Thinkers",
+    author = "Green, Tommaso  and
+      Gubri, Martin  and
+      Puerto, Haritz  and
+      Yun, Sangdoo  and
+      Oh, Seong Joon",
+    editor = "Christodoulopoulos, Christos  and
+      Chakraborty, Tanmoy  and
+      Rose, Carolyn  and
+      Peng, Violet",
+    booktitle = "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2025",
+    address = "Suzhou, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.emnlp-main.1347/",
+    doi = "10.18653/v1/2025.emnlp-main.1347",
+    pages = "26507--26529",
+    ISBN = "979-8-89176-332-6",
+    abstract = "We study privacy leakage in the reasoning traces of large reasoning models used as personal agents which handle sensitive user data. Unlike final outputs, reasoning traces are often assumed to be internal and safe. We challenge this assumption by showing that reasoning traces frequently contain sensitive user data, which can be extracted via prompt injections or accidentally leak into outputs. Through probing and agentic evaluations, we demonstrate that test-time compute approaches, particularly increased reasoning steps, amplify such leakage. While increasing the budget of those test-time compute approaches makes models more cautious in their final answers, it also leads them to reason more verbosely and leak more in their own thinking. This reveals a core tension: reasoning improves utility but enlarges the privacy attack surface. We argue that safety efforts must extend to the model{'}s internal thinking, not just its outputs."
 }
 ```
 
